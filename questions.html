@@ -1,0 +1,734 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Principal | AM2</title>
+  <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+  <div>
+    <div class="navbar">
+      <div class="container">
+        <a class="logo" href="index.html">AM<span>2</span></a>
+
+        <img id="mobile-btn" class="mobile-menu" src="images/nav-icon.png" alt="Barra de Navegação" width="20"
+          height="20">
+
+        <nav>
+          <img id="mobile-exit" class="mobile-menu-exit" src="images/exit-icon.jpg" alt="Fechar Barra de Navegação"
+            width="20" height="20">
+
+          <ul class="first-nav">
+            <list><a href="questions.html">Lista de Questões</a></list>
+            <list><a href="equipe.html">Equipe</a></list>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </div>
+
+  <section class="question-block">
+    <div class="container">
+          <ul class="second-nav">
+            <list><a href="#" class="question">1</a></list>
+            <list><a href="#" class="question">2</a></list>
+            <list><a href="#" class="question">3</a></list>
+            <list><a href="#" class="question">4</a></list>
+            <list><a href="#" class="question">5</a></list>
+            <list><a href="#" class="question">6</a></list>
+            <list><a href="#" class="question">7</a></list>
+            <list><a href="#" class="question">8</a></list>
+            <list><a href="#" class="question">9</a></list>
+            <list><a href="#" class="question">10</a></list>
+            <list><a href="#" class="question">11</a></list>
+            <list><a href="#" class="question">12</a></list>
+            <list><a href="#" class="question">13</a></list>
+            <list><a href="#" class="question">14</a></list>
+            <list><a href="#" class="question">15</a></list>
+            <list><a href="#" class="question">16</a></list>
+            <list><a href="#" class="question">17</a></list>
+            <list><a href="#" class="question">18</a></list>
+          </ul>
+    </div>
+  </section>
+
+  <section class="article-block" id="1">
+    <div class="container">
+      <div class="leftcol">
+        <p class="subhead">Autoração Multimídia II</p>
+        <h1>Questão 1</h1>
+        <h2>Cite cinco tipos primitivos de dados (Data Type) presentes na linguagem
+Javascript. Exemplifique esses tipos através de exemplos.</h2>
+        <h2>Resposta:</h2>
+        <p>Existem 5 data types: Number, String, Boolean, Null e Object. Abaixo há alguns exemplos:<br></p>
+<p>Number:
+<div class="code">let weight = 10;</div></p>
+
+<p>String:
+<div class="code">let name = Guilherme;</div></p>
+
+<p>Boolean:
+<div class="code">let aprovado = true
+let reprovado = false</div></p>
+
+<p>Null:
+<div class="code">var dignidade = null;</div></p>
+
+<p>Object:
+<div class="code">const pessoa = {firstName:"Guilherme", lastname:"Maciel"};</div></p>
+      </div>
+    </div>
+  </section>
+
+  <section class="article-block" id="2">
+    <div class="container">
+      <div class="leftcol">
+        <p class="subhead">Autoração Multimídia II</p>
+        <h1>Questão 2</h1>
+        <h2>Cite três tipos de valores especiais usados em Javascript. Exemplifique
+em Javascript o seu uso</h2>
+        <h2>Resposta:</h2>
+        <p>Undefined: Variável declarada que não tem um valor atribuído a ela. Pode ser usado para verificar se uma variável foi inicializada ou não.<br>Exemplos:
+<div class="code">let a;<br>
+console.log(a);</div></p>
+
+<p>Null: Usado para indicar a ausência de qualquer objeto ou valor. É atribuído explicitamente a uma variável para indicar que ela não possui nada associado.
+<div class="code">let a = null;<br>
+console.log(a);</div></p>
+
+<p>NaN: Representa um resultado que não é um número válido, quando uma operação matemática não pode ser executada.
+<div class="code">let a = "texto";<br>
+console.log(Number(a));</div></p>
+      </div>
+    </div>
+  </section>
+  
+  <section class="article-block" id="3">
+    <div class="container">
+      <div class="leftcol">
+        <p class="subhead">Autoração Multimídia II</p>
+        <h1>Questão 3</h1>
+        <h2>Crie um vetor (Array) que contenha valores numéricos (inteiros e reais)
+e caracteres. Depois crie um laço que percorra e mostre no Console
+todos os valores presentes nesse vetor, um a um. Lembre-se de testar
+se o parâmetro recebido pela função criada é realmente um vetor.</h2>
+        <h2>Resposta:</h2>
+        <p>A função verifica se o parâmetro recebido é realmente um vetor usando o método <i>Array.isArray()</i>. Se não for um vetor, exibe uma mensagem no console. Caso contrário, ela percorre o vetor usando um loop <i>for</i> e exibe cada valor no console usando <i>console.log()</i>.
+
+<div class="code">function percorrerVetor(vetor) {<br>
+  if (!Array.isArray(vetor)) {<br>
+    console.log("O parâmetro fornecido não é um vetor.");<br>
+    return;<br>
+  }<br>
+  for (let i = 0; i &lt vetor.length; i++) {<br>
+    console.log(vetor[i]);<br>
+  }<br>
+}</div></p>
+
+<p>Ex de uso:
+      <div class="code">
+let Vetor = [1, 2.5, "a", 3, "b", "c"];<br>
+percorrerVetor(Vetor);</div></p>
+      </div>
+    </div>
+  </section>
+  
+  <section class="article-block" id="4">
+    <div class="container">
+      <div class="leftcol">
+        <p class="subhead">Autoração Multimídia II</p>
+        <h1>Questão 4</h1>
+        <h2>O que a declaração let myArray = [[[]]]; define? Exemplifique em
+Javascript o seu uso</h2>
+        <h2>Resposta:</h2>
+        <p>A declaração de let myArray = [[[]]]; define uma matriz tridimensional, já que cada array é uma dimensão e podem ser adicionados outros arrays dentro dos próprios.
+</p>
+
+<p>Ex de uso:
+      <div class="code">let myArray = [[[]]];<br>
+myArray [0][0].push(1);<br>
+console.log(myArray[0][0][0]);</div></p>
+      </div>
+    </div>
+  </section>
+  
+  <section class="article-block" id="5">
+    <div class="container">
+      <div class="leftcol">
+        <p class="subhead">Autoração Multimídia II</p>
+        <h1>Questão 5</h1>
+        <h2>Faça uma função que receba uma string e retorne um vetor de
+caracteres. Faça um teste para saber se o parâmetro recebido é do tipo
+String, caso não seja, retorne undefined.
+</h2>
+        <h2>Resposta:</h2>
+        <p>Essa função recebe uma string como parâmetro e retorna um vetor de caracteres. Antes de retornar o vetor, verifica se o parâmetro fornecido é uma string, se não, retorna undefined. Ela verifica se não é uma string usando o operador <i>typeof</i>. Se for string a função utiliza o método <i>Array.from()</i> para criar um vetor a partir dos caracteres da string e o retorna.
+
+<div class="code">function StringVetor(string) {<br>
+  if (typeof string !== 'string') {<br>
+    return undefined;<br>
+  }<br>
+  return Array.from(string);<br>
+}</div></p>
+
+<p>Ex de uso: 
+<div class="code">let StringA = "Oi, tudo bem?";<br>
+let VetorCaracteres = StringVetor(StringA);<br>
+console.log(VetorCaracteres);</div></p>
+      </div>
+    </div>
+  </section>
+  
+  <section class="article-block" id="6">
+    <div class="container">
+      <div class="leftcol">
+        <p class="subhead">Autoração Multimídia II</p>
+        <h1>Questão 6</h1>
+        <h2>Faça uma função chamada filterPrimes(arr) que receba um vetor com
+elementos numéricos (a função deve testar essa condição e retornar
+valor que possa indicar que o vetor fornecido não é composto somente
+por números) e que retorna um vetor com o conjunto de valores primos
+encontrados. Caso não seja encontrado nenhum valor primo, a função
+deve retornar um valor nulo.</h2>
+        <h2>Resposta:</h2>
+        <p>A função verifica se o parâmetro fornecido é um vetor e se todos os elementos do vetor são numéricos com isNaN, se não, a função retorna uma mensagem indicando que o vetor não é composto somente por números. A função "Primo" verifica se um número é primo, utilizando um loop para testar se o número é divisível por algum número entre 2 e a raiz quadrada do número. Se o número for divisível por algum desses valores, significa que não é primo e retorna false, se não for divisível ai retorna true. Usando o método filter() do vetor arr junto com a função Primo para filtrar apenas os valores primos. O resultado é armazenado na constante primos. Caso não tenha números primos no vetor, a função retorna Null.
+
+<div class="code">function filterPrimes(arr) {<br>
+  if (!Array.isArray(arr) || arr.some(isNaN)) {<br>
+    return "O vetor fornecido não é composto somente por números.";<br>
+  }<br>
+  function Primo(num) {<br>
+    if (num &lt= 1) {<br>
+      return false;<br>
+    }<br>
+    for (let i = 2; i &lt= Math.sqrt(num); i++) {<br>
+      if (num % i === 0) {<br>
+        return false;<br>
+      }<br>
+    }<br>
+    return true;<br>
+  }<br>
+      const primos = arr.filter(Primo);<br>
+  return primos.length &gt 0 ? primos : null;<br>
+}
+    </div></p>
+
+<p>Ex de uso:
+<div class="code">let numeros = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];<br>
+let primos = filterPrimes(numeros);<br>
+console.log(primos);</div></p>
+      </div>
+    </div>
+  </section>
+  
+  <section class="article-block" id="7">
+    <div class="container">
+      <div class="leftcol">
+        <p class="subhead">Autoração Multimídia II</p>
+        <h1>Questão 7</h1>
+        <h2>Faça uma função chamada searchItems(arr,key,value), que recebe como
+parâmetros um Array de Objetos Literais (arr), uma chave (key) e um
+valor para buscar (value). A função deve procurar em cada objeto
+armazenado no no vetor, uma key (chave) que contenha um valor
+(value), fornecido. Nos Objetos Literais armazenados no vetor, deve
+existir as chaves "nome", "idade" e "data_nascimento". A primeira
+chave deve receber valores do tipo String; a idade, Number; e a última,
+Date. Caso a key fornecida como parâmetro não esteja presente nos
+objetos fornecidos, a função deve retornar o tipo especial "undefined".
+Caso o valor fornecido no parâmetro value não esteja presente nos
+objetos, deve ser retornando "null". Se houver objetos com o valor
+procurado, deve-se retornar um vetor que contenha esses objetos.
+</h2>
+        <h2>Resposta:</h2>
+        <p>Uso de Array.isArray() para verificar se é um vetor. Se não for um vetor, exibe uma mensagem no console. Em seguida, verifica se a chave fornecida em key corresponde a uma das chaves esperadas: "nome", "idade" ou "data_nascimento". Se não corresponder, retorna undefined. Utilizando o método filter() para obter apenas os objetos cujo valor da chave seja igual ao valor fornecido em value, Então retorna resultado com o que foi encontrado ou null se nada foi encontrado.
+
+<div class="code">function searchItems(arr, key, value) {<br>
+  if (!Array.isArray(arr)) {<br>
+    console.log("Parâmetro Inválido!");<br>
+    return;<br>
+  }<br>
+  if (key !== "nome" && key !== "idade" && key !== "data_nascimento") {<br>
+    return undefined;<br>
+  }<br>
+  const resultado = arr.filter(obj =&gt obj[key] === value);<br>
+  if (resultado.length === 0) {<br>
+    return null;<br>
+  }<br>
+  return resultado;<br>
+}</div></p>
+
+<p>Ex de uso:
+<div class="code">const items = [<br>
+  { nome: "Levi", idade: 42, data_nascimento: new Date(1981, 6, 1) },<br>
+  { nome: "Criso", idade: 50, data_nascimento: new Date(1973, 4, 2) },<br>
+  { nome: "Guilherme", idade: 45, data_nascimento: new Date(1978, 7, 20) }<br>
+];<br><br>
+
+const key = "idade";<br>
+const value = 42;<br><br>
+
+const resultado = searchItems(items, key, value);<br>
+console.log(resultado);</div></p>
+      </div>
+    </div>
+  </section>
+  
+  <section class="article-block" id="8">
+    <div class="container">
+      <div class="leftcol">
+        <p class="subhead">Autoração Multimídia II</p>
+        <h1>Questão 8</h1>
+        <h2>Faça uma função em Javascript, chamada printTxt(str,element), que
+insere dentro de um elemento DOM, fornecido como parâmetro, um
+elemento DOM do tipo P. O elemento P, deverá ter como valor a String
+fornecida no parâmetro str. Através do Javascript, essa função deve
+adicionar o estilo Negrito e o tamanho de fonte 14px, aos parágrafos
+criados. Note, a atribuição de estilo não deve ser aplicada às tags P
+através de atributo explícito style, mas através da propriedade style()
+dos objetos DOM. A função criada deve retornar o elemento passado
+como parâmetro, preenchido com o elemento P inserido. Caso não seja
+passado qualquer um dos parâmetros solicitados, a função deve
+retornar "null".
+</h2>
+        <h2>Resposta:</h2>
+        <p><div class="code">function printTxt(str,element){ <br>
+    if((typeof str == "undefined") || (typeof element == "undefined")){<br>
+         return null;<br>
+    } <br><br>
+
+    element.innerHTML = element.innerHTML+ `&ltp&gt ${str}&lt/p&gt `;<br>
+    element.style.fontSize = "14px";<br>
+    element.style.fontWeight = "bold";<br>
+
+    return element;<br>
+ 
+ }</div></p>
+        <p>Ex de uso:
+          <div class="code">printTxt("Oi", document.getElementById("8"));</div></p>
+      </div>
+    </div>
+  </section>
+  
+  <section class="article-block" id="9">
+    <div class="container">
+      <div class="leftcol">
+        <p class="subhead">Autoração Multimídia II</p>
+        <h1>Questão 9</h1>
+        <h2>Faça uma função que permite comparar se os itens de dois vetores são
+iguais tanto em termos de valor quanto tipo (data type). Você precisará
+percorrer cada item do vetor e comparar seus valores. Os itens do array
+não podem ser nem Boolean nem Object nem outro Array, caso sejam,
+faça a função de comparação devolver undefined. Caso sejam arrays
+com valores iguais, retorne true. Caso os itens estejam errados, false.
+Caso o número de itens dos dois arrays seja diferente, a função deve
+retornar false. Caso os dois parâmetros passados para a função não
+sejam arrays, a função deve retornar undefined.
+</h2>
+        <h2>Resposta:</h2>
+        <p><div class="code">function compareVector(v1, v2) {<br>
+  let count=0;<br>
+  if (!Array.isArray(v1) && !Array.isArray(v2))<br>
+    return undefined;<br><br>
+    
+  if (v1.length != v2.length)<br>
+    return false;<br>
+  for (i=0;i&ltv1.length; i++){<br>
+    if (typeof v1[i] == "boolean" || typeof v1[i] == "object" ){<br>
+      return undefined;<br>
+    }<br>
+    if (typeof v2[i] == "boolean" || typeof v2[i] == "object" ){<br>
+      return undefined;<br>
+    }<br><br>
+
+    if (v1[i] === v2[i])<br>
+      count++;<br>
+    else<br>
+      return false;<br>
+  }<br>
+  if (count = v1.length)<br>
+    return true<br>
+}</div></p>
+        <p>Ex de uso:
+        <div class="code">const v = [1, 2, 3];<br>
+const v2 = [1, 2, 3];<br>
+const v3 = [3, 2, 1];<br>
+const v4 = [1, 2, "3"];<br>
+const v5 = [1, 2, [1,2]];<br>
+        compareVector(v, v2);</div></p>
+      </div>
+    </div>
+  </section>
+  
+  <section class="article-block" id="10">
+    <div class="container">
+      <div class="leftcol">
+        <p class="subhead">Autoração Multimídia II</p>
+        <h1>Questão 10</h1>
+        <h2>Explicação Inicial:
+O Javascript não possui uma função que gere uma sequência de números
+inteiros que comece em um dado valor e termine em outro. No entanto, é
+possível criar uma função que faça isso. Podemos criar uma função chamada
+range(begin,end) que recebe como parâmetros dois números (begin e end) e
+devolve um Array preenchido dentro da faixa de valores fornecida (range)
+pelos parâmetros begin e end. Note que esses valores são incrementados de
+um a um (chamamos esse incremento de passo ou valor de incremento ou
+step). Exemplo:
+          <div class="code">
+function range(begin,end) {<br>
+…<br>
+}<br>
+console.log(range(10,20));</div>
+Saída no Console: [10,11,12,13,14,15,16,17,18,19,20]<br>
+Lembre-se de testar se os valores fornecidos são do tipo Number. Se todos
+os parâmetros são fornecidos, se o valor de begin é menor que end, dentre
+outras possíveis condições de erro.<br>
+Uma função range é sempre útil para se utilizar no desenvolvimento de uma
+aplicação.<br>
+A partir da função range(begin,end) descrita acima, faça uma nova
+função com mesmo nome e que receba o parâmetro step, que define o
+valor de incremento do faixa de valores criada. A função resultante,
+range(begin,end,step), deve retornar os mesmos valores descritos
+descritos para a função range(begin,end) . Não esqueça de tentar prever
+todas as possíveis condições de erro e trate esses erros a fim de que
+seu programa não seja prejudicado por sua função.</h2>
+        <h2>Resposta:</h2>
+        <p><div class="code">function range(begin, end, step = 1){<br>
+  if (typeof begin !== 'number' || typeof end !== 'number' || typeof step !== 'number'){<br>
+    throw new Error('Os valores devem ser números!');<br>
+  }<br>
+  if (step == 0){<br>
+    throw new Error('O passo não pode ser zero!');<br>
+  }<br>
+  if (step &gt 0 && begin &gt end){<br>
+    throw new Error('O inicio deve ser menor ou igual ao fim quando o passo for positivo!');<br>
+  }<br>
+  if (step &lt 0 && begin &lt end){<br>
+    throw new Error('O inicio deve ser maior ou igual ao fim quando o passo for negativo!');<br>
+  }<br><br>
+  
+  const resultado = [];<br><br>
+  
+  if (step > 0){<br>
+    for (let i = begin; i <= end; i+= step){<br>
+      resultado.push(i);<br>
+    }<br>
+  } else {<br>
+    for(let i = begin; i >= end; 1 += step){<br>
+      resultado.push(i);<br>
+    }<br>
+  }<br>
+  return(resultado);<br>
+}<br><br>
+
+console.log(0, 10, 1);</div></p>
+      </div>
+    </div>
+  </section>
+  
+  <section class="article-block" id="11">
+    <div class="container">
+      <div class="leftcol">
+        <p class="subhead">Autoração Multimídia II</p>
+        <h1>Questão 11</h1>
+        <h2>Como funciona o método sort(), utilizado no Javascript? Crie dois
+exemplos de usos distintos deste método para ilustrar sua definição.</h2>
+        <h2>Resposta:</h2>
+        <p>O método sort() funciona para ordenar os elementos de um array de acordo com a ordem de classificação definida.<br><br>
+
+Exemplo 1:
+<div class="code">let numeros = [5, 1, 4, 2, 3];<br>
+numeros.sort(function(a, b){<br>
+  return a - b;<br>
+});<br>
+console.log(numbers);<br>
+</div><br>
+Saída:[1, 2, 3, 4, 5]<br><br>
+
+Exemplo 2:
+<div class="code">let biscoitos = ['chocolate', 'morango', 'doce de leite', 'salgado', 'limão'];<br>
+biscoitos.sort();<br>
+console.log(biscoitos);</div><br>
+Saída: ['chocolate', 'doce de leite', 'limão', 'morango', 'salgado']</p>
+      </div>
+    </div>
+  </section>
+  
+  <section class="article-block" id="12">
+    <div class="container">
+      <div class="leftcol">
+        <p class="subhead">Autoração Multimídia II</p>
+        <h1>Questão 12</h1>
+        <h2>O que é uma função de callback, em Javascript? Exemplifique o uso
+fazendo uma função de callback a partir da função setTimeout(),
+presente no Javascript.</h2>
+        <h2>Resposta:</h2>
+        <p>A função callback é uma função que é executada dentro de outra e volta depois de determinado evento. Por exemplo:
+<div class="code">function callback(){<br>
+  console.log('O callback funfou!');<br>
+}<br>
+setTimeout (callback, 3000);</div><br>
+O callback nessa situação será executado após 3 segundos</p>
+      </div>
+    </div>
+  </section>
+  
+  <section class="article-block" id="13">
+    <div class="container">
+      <div class="leftcol">
+        <p class="subhead">Autoração Multimídia II</p>
+        <h1>Questão 13</h1>
+        <h2>Explicação Inicial: Uma exceção de software é a interrupção no
+funcionamento de um software em virtude de algum erro interno ao
+programa. Um erro comum que pode gerar a interrupção normal de um
+programa é quando se espera que uma função retorne um dado tipo de valor
+e o valor retornado é outro, não suportado. Outra interrupção pode ser
+gerada quando se está esperando uma resposta síncrona de uma função e
+ela retorna uma resposta assíncrona. Note que uma dada função é chamada
+de síncrona quando o programa tem que esperar a finalização da execução
+desta função, antes de poder continuar a execução de outras funções ou
+comandos. Em Javascript, há um conjunto de instruções que permitem
+“capturar” o efeito de uma exceção e executar algum comando para que essa
+exceção seja descrita para o usuário ou armazenada em um arquivo de
+“ocorrências”, relacionado ao programa. Esse arquivo, normalmente, é
+chamado de log do programa. O par de instruções utilizadas para conter e
+tratar - error handling - (registrar ou mostrar o erro executado) são o
+try…catch.
+Crie um programa em Javascript que permite testar essas instruções
+em duas situações distintas de exceção. Explique o funcionamento,
+passo a passo, de seu programa.
+</h2>
+        <h2>Resposta (Caso 1):</h2>
+        <p>Quando nós atribuimos um valor dentro de uma função que ela não é capaz de suportar, encontramos um tipo de erro que pode ser tratado dentro das exceções como "RangeError". No código abaixo, mostra duas linhas de código que podem gerar esse erro.<div class="code">let num = 1;<br>
+        num.toPrecision(500);</div></p>
+        <p>A função toPrecision altera o números de casas decimais que um número mostra. Como ela já foi tratada para não suportar números muito extensos, é possível capturar esse erro da seguinte maneira:
+        <div class="code">
+let num = 1; // atribui a variavel<br>
+try { // inicia a captura<br>
+  num.toPrecision(500); // aplica o código com possível falha<br>
+}<br>
+catch(err) { // captura a falha<br>
+  console.log(err.name); // registra o nome da falha no console<br>
+}</div></p>
+        
+        <h2>Resposta (Caso 2):</h2>
+        <p>Um erro bastante comum nos códigos é o de sintaxe. Ele pode ser encadeado, porém em algumas situações não é avisado. A seguir um erro que pode ser comum no em JS:<div class="code">eval("alert('Hello)");</div></p>
+        <p>A função eval captura um conjunto de informações e avalia as expressões em string para tratá-las da maneira esperada, convertendo String para outros valores. Com erros que podem acontecer na função, podemos tratar como no código abaixo:
+        <div class="code">try {<br>
+  eval("alert('Hello)");   // com a falta de um caractere, vai produzir um erro<br>
+}<br>
+catch(err) {<br>
+  console.error(err.name); // envia uma mensagem do tipo erro para o console<br>
+}</div></p>
+      </div>
+    </div>
+  </section>
+  
+  <section class="article-block" id="14">
+    <div class="container">
+      <div class="leftcol">
+        <p class="subhead">Autoração Multimídia II</p>
+        <h1>Questão 14</h1>
+        <h2>Mostre, exemplificando, qual a diferença entre Function Declaration,
+Function Expression e Arrow Function.</h2>
+        <h2>Resposta:</h2>
+        <p>1 - Function Declaration é a forma padrão de declarar uma função de escopo global ou de função, sua sintaxe é simplesmente nomear a função e fornecer um bloco de código.
+<div class="code">function soma(a, b){<br>
+  return a + b;<br>
+}<br>
+console.log(soma(1, 1))</div><br>
+O resultado é (2)<br><br>
+
+2 - Function Expression é a definição da função dentro de um expressão, que é atribuido a uma variável, sendo utilizada também como argumento para outra função.
+<div class="code">const subtra = function (a, b){<br>
+  return a - b;<br>
+};<br>
+console.log(subtra(5, 5));</div><br>
+O resultado é (0)<br><br>
+
+3 - Arrow Function são usada para definir funções. São espressões de função que usam a sintaxe (=>), mas não têm valor próprio, elas herdam do contexto.
+<div class="code">const multi = (a, b) => a*b;
+console.log(multi(2, 4));</div><br>
+O resultado é (8)<br><br>
+
+A diferença dessas três formas está em seu valor e na forma de declaração. A Function Declaration é mais versátil e pode ser chamada antes de sua definição, já as outras devem ser declaradas antes de serem chamadas</p>
+      </div>
+    </div>
+  </section>
+  
+  <section class="article-block" id="15">
+    <div class="container">
+      <div class="leftcol">
+        <p class="subhead">Autoração Multimídia II</p>
+        <h1>Questão 15</h1>
+        <h2>Monte, usando HTML e Javascript, uma lista não-ordenada (&ltul&gt) de
+nomes de fruta, cujos valores são oriundos de um vetor de strings com
+15 elementos. Depois, crie dois botões que permitam ordenar
+alfabeticamente os valores da lista, na ordem crescente e decrescente,
+respectivamente. Use o método/função onclick do Javascript para
+capturar os eventos de clique do mouse sobre os botões. E crie duas
+funções de tratamento (event handling ou event handler) do evento para
+responder a esse evento, em cada botão
+</h2>
+        <h2>Resposta:</h2>
+        <p>Ordenar Alfabeticamente por:
+        <div><a href="#" class="access-btn" id="alf-up">Crescente</a><a href="#" class="access-btn" id="alf-down">Decrescente</a></div></p>
+        <p id="lista-fruta"></p>
+
+<p>Código:
+<div class="code">const alfUp = document.getElementById("alf-up");<br>
+const alfDown = document.getElementById("alf-down");<br>
+
+frutas = ["Banana", "Maçã", "Abacate", "Abacaxi", "Cajá", "Morango", "Goiaba", "Coco", "Jaca", "Jambo", "Laranja", "Manga", "Limão", "Mamão", "Maracujá"]<br>
+txtLista = document.getElementById("lista-fruta");<br><br>
+
+function listarFrutas(v) {<br>
+  txtLista.innerHTML = "";<br>
+  txtLista.innerHTML = txtLista.innerHTML+ `&ltul&gt `<br>
+  for (i=0;i&ltv.length;i++){<br>
+    txtLista.innerHTML = txtLista.innerHTML+ `&ltlist&gt ${v[i]}&lt/list&gt&ltbr&gt `;<br>
+  }<br>
+  txtLista.innerHTML = txtLista.innerHTML+ `&lt/ul&gt `<br>
+}<br><br>
+
+listarFrutas(frutas);<br><br>
+
+alfUp.addEventListener('click', () =&gt {<br>
+  frutas.sort();<br>
+  listarFrutas(frutas);<br>
+})<br>
+alfDown.addEventListener('click', () =&gt {<br>
+  frutas.sort();<br>
+  frutas.reverse();<br>
+  listarFrutas(frutas);<br>
+})</div></p>
+      </div>
+    </div>
+  </section>
+  
+  <section class="article-block" id="16">
+    <div class="container">
+      <div class="leftcol">
+        <p class="subhead">Autoração Multimídia II</p>
+        <h1>Questão 16</h1>
+        <h2>Faça uma função chamada searchKeyword(arr,keywd), que recebe,
+como parâmetros, um vetor de Strings (arr), além de uma palavra-chave
+ou trecho de texto (keywd), a fim de realizar uma busca por todos os
+elementos do vetor qie possuírem em sua composição o valor fornecido
+em keywd. Ele deve retornar as posições do vetor onde foi encontrada
+a substring (trecho de texto ou palavra-chave) fornecida como
+parâmetro.
+</h2>
+        <h2>Resposta:</h2>
+        <p>A função verifica se o primeiro parâmetro fornecido é um vetor usando Array.isArray(). Se não for um vetor, exibe uma mensagem no console. Se estiver tudo ok, dentro do loop for, a função verifica se cada elemento do vetor arr contém a substring fornecida em keywd usando o método includes(). Se a substring for encontrada no elemento, o índice desse elemento é adicionado ao vetor positions.
+
+<div class="code">function searchKeyword(arr, keywd) {<br>
+  if (!Array.isArray(arr)) {<br>
+    console.log("Parâmetro inválido!");<br>
+    return;<br>
+  }<br>
+  const positions = [];<br>
+  for (let i = 0; i &lt arr.length; i++) {<br>
+    if (arr[i].includes(keywd)) {<br>
+      positions.push(i);<br>
+    }<br>
+  }<br>
+  return positions;<br>
+}</div></p>
+
+<p>Ex de uso:
+<div class="code">let strings = ["Pedro Alves", "Antonio Carlos", "Samuel Junior", "Felipe Antonio", "Antonio Pedro"];<br>
+let keyword = "Antonio";<br>
+let result = searchKeyword(strings, keyword);<br>
+console.log(result);<br></div></p>
+      </div>
+    </div>
+  </section>
+  
+  <section class="article-block" id="17">
+    <div class="container">
+      <div class="leftcol">
+        <p class="subhead">Autoração Multimídia II</p>
+        <h1>Questão 17</h1>
+        <h2>Crie um layout baseado em uma GRID (CSS) responsivo para uma
+página de produto. O layout deve ter as seguintes seções:<br>
+○ Uma seção de cabeçalho com um logotipo e menu de navegação<br>
+○ Uma área de conteúdo principal com uma imagem do produto,
+título, descrição e preço<br>
+○ Uma seção de produtos relacionados com uma grade de imagens
+e títulos de produtos<br>
+○ Uma seção de rodapé com links para mídias sociais e
+informações de contato<br>
+Diretrizes para o exercício:<br>
+○ Use CSS Grid para criar um layout de 2 colunas para as seções de
+cabeçalho e rodapé, e um layout de 3 colunas para as seções de
+conteúdo principal e produtos relacionados.<br>
+○ Use Flexbox para alinhar os elementos dentro de cada célula da
+grade e criar layouts responsivos para tamanhos de tela menores.<br>
+○ Use media queries para ajustar o layout e a estilização para
+diferentes tamanhos de tela.<br>
+</h2>
+        <h2>Resposta:</h2>
+        <div class="flex-container">
+  <header class="item1">Cabeçalho</header>
+  <div class="item2">Produtos</div>
+  <div class="item3">Principal<div style="background: white;min-height:5em;max-width:5em;"></div></div>
+  <div class="item4">Rodapé</div>
+</div>
+      </div>
+    </div>
+  </section>
+  
+  <section class="article-block" id="18">
+    <div class="container">
+      <div class="leftcol">
+        <p class="subhead">Autoração Multimídia II</p>
+        <h1>Questão 18</h1>
+        <h2>Para que servem as instruções await e async no Javascript? Faça um
+exemplo de uso destas instruções em um código Javascript usado em
+uma página Web construída por você para este fim.</h2>
+        <h2>Resposta:</h2>
+        <p>Durante a leitura de um código em JS, é possível encontrar o termo <i>async</i>, que geralmente é usado para definir funções que atuam em um momento "assíncrono". Quando uma função comum é trabalhada em um algoritmo, só é possível sair dela quando é resolvida de alguma forma, seja retornando um valor ou resultando em um erro. Através do <i>async</i>, é possível iniciar uma função e pausar a qualquer momento através do await, que vai buscar o que chamamos de <i>Promises</i>(promessas) que são condicionais para que o código volte a fluir e retorne um resultado, que também pode retornar como uma falha.</p>
+        <p>Exemplo:
+        <div class="code">function func1(number){<br>
+    return new Promise(resolve =&gt{<br>
+        setTimeout(() =&gt resolve(77 + number) , 1000)<br>
+    })<br>
+}<br><br>
+
+function func2(number){<br>
+    return new Promise(resolve =&gt{<br>
+        setTimeout(() =&gt resolve(22 + number) , 1000)<br>
+    })<br>
+}<br><br>
+
+function func3(number){<br>
+    return new Promise(resolve =&gt{<br>
+        setTimeout(() =&gt resolve(14 * number) , 1000)<br>
+    })<br>
+}<br><br>
+
+ async function myAsyncFunction(){<br>
+    var number = await func1(4);<br><br>
+
+    console.log('Hello');<br>
+    number = await func2(number);<br><br>
+
+    console.log('World');<br>
+    var result = await func3(number);<br><br>
+
+    console.log(result);<br>
+}</div></p>
+      </div>
+    </div>
+  </section>
+
+  
+
+  <script src="script.js"></script>
+
+</body>
+
+</html>
